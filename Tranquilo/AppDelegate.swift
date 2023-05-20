@@ -6,18 +6,16 @@
 //
 
 import UIKit
-import ParseSwift
-
-
+import FirebaseCore
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        ParseSwift.initialize(applicationId: "o5TdNIHA8izBPuBJ7gh8GVttF3zaJYzMh6vKuY2G", clientKey: "BbguhVOeNbe4pDnCnzYJTK6MroMiFhyo88yrf6WB", serverURL: URL(string: "https://parseapi.back4app.com")!)
-
+        
+        FirebaseApp.configure()
         return true
     }
 
