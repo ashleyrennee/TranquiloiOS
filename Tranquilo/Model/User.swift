@@ -9,5 +9,5 @@ import Foundation
 import FirebaseFirestore
 
 struct User{
-    let name : String?
+    let userName : String?
 }
